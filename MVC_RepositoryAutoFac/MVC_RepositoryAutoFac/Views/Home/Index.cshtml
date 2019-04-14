@@ -1,0 +1,27 @@
+﻿@model MVC_RepositoryAutoFac.Models.Company
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index is displaying</h2>
+
+
+
+<h2>Index</h2>
+
+<h2>Display with out HTML helpers</h2>
+
+<h3>CompanyName  : @Model.Name</h3>
+<h3>CompanyType  : @Model.CompanyType</h3>
+<h3>Headquarters : @Model.Headquarters</h3>
+
+
+
+<h2>Display using HTML helpers</h2>
+
+@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)
+<br />
+@Html.DisplayNameFor(model => model.CompanyType) :@Html.DisplayFor(model => model.CompanyType)
+<br />
+@Html.DisplayNameFor(model => Model.Headquarters) :@Html.DisplayFor(model => Model.Headquarters)
